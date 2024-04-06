@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x32.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <button class="minimize-btn" id="minibut" onclick="toggleSidebar()"><ion-icon
+            name="grid-outline"></ion-icon></button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo" width="100">
+        </div>
+        <a href="https://subhranshu-patra29.github.io/funGames_3t/">Tic-Tac-Toe</a>
+        <a href="https://subhranshu-patra29.github.io/funGames_2048/">2048</a>
+        <a href="chess.html">Chess</a>
+        <a href="#" class="active">Sudoku</a>
+    </div>
+
+    <div class="container" id="container">
+        <span style="font-size: 65px;">Sudoku</span>
+        <div class="grid" id="grid"></div>
+        <img class="sudkimg" src="sudkimg.jpeg" alt="">
+        <div id="result" onclick="validate()">Validate Board</div>
+        <div id="reset" onclick="reset(null)">Reset Board</div>
+    </div>
+    <div class="difficulty" id="difficulty">
+        <h1>Choose Difficulty Level</h1>
+        <div>
+            <div class="difficulty-options"><input type="radio" id="easy" name="difficulty" value="easy">
+                <label for="easy">Easy</label>
+            </div>
+            <div class="difficulty-options"><input type="radio" id="medium" name="difficulty" value="medium">
+                <label for="medium">Medium</label>
+            </div>
+            <div class="difficulty-options"><input type="radio" id="difficult" name="difficulty" value="difficult">
+                <label for="difficult">Difficult</label>
+            </div>
+        </div>
+        <button id="startbutton" onclick="selectDifficulty()">Start Game</button>
+    </div>
+
+
+</body>
+
+</html>

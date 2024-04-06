@@ -1,0 +1,137 @@
+.difficulty {
+    position: absolute;
+    color: chartreuse; 
+    top: 11%;
+    left: 20%;
+    font-size: 30px;
+    display: block;
+}
+
+.difficulty-options, #startbutton {
+    background-color: #555;
+    border: 2.5px solid chartreuse;
+    border-radius: 30px;
+    padding: 3px;
+    margin-left: 102px;
+    margin-bottom: 5px;
+    width: 15em;
+    height: 45px;
+}
+
+#startbutton {
+    position: absolute;
+    font-size: 30px;
+    width: 7.5em;
+    margin-top: 11px;
+    margin-left: 218px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Genevas, Verdana, sasns-serif;
+    background-color: black;
+}
+
+.container{
+    color: chartreuse;
+    margin-left: 456px;
+    filter: blur(7px);
+}
+
+.grid {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    margin: 10px -120px;
+    width: max-content;
+    padding: 7px;
+    border: double chartreuse;
+    border-radius: 5px;
+}
+
+
+
+.grid div {
+    background-color: rgb(122, 121, 121);
+    text-align: center;
+    font: 1.8em sans-serif;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 7px;
+    border-color:chartreuse;
+    border-style: solid;
+    color: black;
+}
+
+.sudkimg {
+    position: absolute;
+    margin: 100px 135px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+#result, #reset {
+    color: chartreuse;
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    width: 285px;
+    cursor: pointer;
+    background-color: rgb(44, 41, 41);
+    margin: 320px 350px;
+    border: 1px solid chartreuse;
+    border-radius: 3px;
+}
+
+#reset {
+    margin-top: 365px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 135px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    clip-path: circle();
+    border: rgb(179, 23, 114) 5px double;
+}
+
+.sidebar a{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: chartreuse;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover, .active  {
+    background-color: #555;
+}
+
+.minimize-btn {
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    color: chartreuse;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    top: 40px;
+    left: 135px;
+    font-size: 30px;
+    border: 2.5px double chartreuse;
+    border-radius: 3px;
+}
